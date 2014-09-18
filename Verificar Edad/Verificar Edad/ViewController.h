@@ -13,5 +13,14 @@
 {
     Person * user;
 }
+@property (strong, nonatomic) IBOutlet UITextField *userText;
+
+@property (strong, nonatomic) IBOutlet UITextField *ageText;
+
+@property (strong, nonatomic) IBOutlet UILabel *result;
+@property (strong, nonatomic) IBOutlet UITextField *cityText;
+
+- (IBAction)validateAge:(id)sender;
+
 
 @end
