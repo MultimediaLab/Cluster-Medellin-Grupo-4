@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8AC62C319DCBCA100BF750B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62C219DCBCA100BF750B /* main.m */; };
+		F8AC62C619DCBCA100BF750B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62C519DCBCA100BF750B /* AppDelegate.m */; };
+		F8AC62C919DCBCA100BF750B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62C819DCBCA100BF750B /* ViewController.m */; };
+		F8AC62CC19DCBCA100BF750B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AC62CA19DCBCA100BF750B /* Main.storyboard */; };
+		F8AC62CE19DCBCA100BF750B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AC62CD19DCBCA100BF750B /* Images.xcassets */; };
+		F8AC62D119DCBCA100BF750B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8AC62CF19DCBCA100BF750B /* LaunchScreen.xib */; };
+		F8AC62DD19DCBCA100BF750B /* Convertidor_DolaresTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62DC19DCBCA100BF750B /* Convertidor_DolaresTests.m */; };
+		F8AC62E819DCBF8A00BF750B /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62E719DCBF8A00BF750B /* ConfigViewController.m */; };
+		F8AC62EB19DCBFA100BF750B /* ConvertidorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62EA19DCBFA100BF750B /* ConvertidorViewController.m */; };
+		F8AC62EF19DCBFCB00BF750B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62EE19DCBFCB00BF750B /* Person.m */; };
+		F8AC62F219DCBFDB00BF750B /* Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8AC62F119DCBFDB00BF750B /* Converter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8AC62D719DCBCA100BF750B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8AC62B519DCBCA100BF750B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8AC62BC19DCBCA100BF750B;
+			remoteInfo = "Convertidor Dolares";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8AC62BD19DCBCA100BF750B /* Convertidor Dolares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Convertidor Dolares.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC62C119DCBCA100BF750B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AC62C219DCBCA100BF750B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8AC62C419DCBCA100BF750B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8AC62C519DCBCA100BF750B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8AC62C719DCBCA100BF750B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F8AC62C819DCBCA100BF750B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8AC62CB19DCBCA100BF750B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8AC62CD19DCBCA100BF750B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8AC62D019DCBCA100BF750B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F8AC62D619DCBCA100BF750B /* Convertidor DolaresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Convertidor DolaresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC62DB19DCBCA100BF750B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AC62DC19DCBCA100BF750B /* Convertidor_DolaresTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Convertidor_DolaresTests.m; sourceTree = "<group>"; };
+		F8AC62E619DCBF8A00BF750B /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigViewController.h; path = ../ConfigViewController.h; sourceTree = "<group>"; };
+		F8AC62E719DCBF8A00BF750B /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigViewController.m; path = ../ConfigViewController.m; sourceTree = "<group>"; };
+		F8AC62E919DCBFA100BF750B /* ConvertidorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConvertidorViewController.h; path = ../ConvertidorViewController.h; sourceTree = "<group>"; };
+		F8AC62EA19DCBFA100BF750B /* ConvertidorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConvertidorViewController.m; path = ../ConvertidorViewController.m; sourceTree = "<group>"; };
+		F8AC62ED19DCBFCB00BF750B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F8AC62EE19DCBFCB00BF750B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F8AC62F019DCBFDB00BF750B /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		F8AC62F119DCBFDB00BF750B /* Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Converter.m; sourceTree = "<group>"; };
+		F8AC62F419DCC18300BF750B /* ConfigViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewControllerDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8AC62BA19DCBCA100BF750B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC62D319DCBCA100BF750B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8AC62B419DCBCA100BF750B = {
+			isa = PBXGroup;
+			children = (
+				F8AC62BF19DCBCA100BF750B /* Convertidor Dolares */,
+				F8AC62D919DCBCA100BF750B /* Convertidor DolaresTests */,
+				F8AC62BE19DCBCA100BF750B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8AC62BE19DCBCA100BF750B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62BD19DCBCA100BF750B /* Convertidor Dolares.app */,
+				F8AC62D619DCBCA100BF750B /* Convertidor DolaresTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8AC62BF19DCBCA100BF750B /* Convertidor Dolares */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62C419DCBCA100BF750B /* AppDelegate.h */,
+				F8AC62C519DCBCA100BF750B /* AppDelegate.m */,
+				F8AC62F519DCC19700BF750B /* Protocolo */,
+				F8AC62F319DCBFE800BF750B /* Model */,
+				F8AC62EC19DCBFAE00BF750B /* Controllers */,
+				F8AC62CA19DCBCA100BF750B /* Main.storyboard */,
+				F8AC62CD19DCBCA100BF750B /* Images.xcassets */,
+				F8AC62CF19DCBCA100BF750B /* LaunchScreen.xib */,
+				F8AC62C019DCBCA100BF750B /* Supporting Files */,
+			);
+			path = "Convertidor Dolares";
+			sourceTree = "<group>";
+		};
+		F8AC62C019DCBCA100BF750B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62C119DCBCA100BF750B /* Info.plist */,
+				F8AC62C219DCBCA100BF750B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8AC62D919DCBCA100BF750B /* Convertidor DolaresTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62DC19DCBCA100BF750B /* Convertidor_DolaresTests.m */,
+				F8AC62DA19DCBCA100BF750B /* Supporting Files */,
+			);
+			path = "Convertidor DolaresTests";
+			sourceTree = "<group>";
+		};
+		F8AC62DA19DCBCA100BF750B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62DB19DCBCA100BF750B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8AC62EC19DCBFAE00BF750B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62C719DCBCA100BF750B /* ViewController.h */,
+				F8AC62C819DCBCA100BF750B /* ViewController.m */,
+				F8AC62E919DCBFA100BF750B /* ConvertidorViewController.h */,
+				F8AC62EA19DCBFA100BF750B /* ConvertidorViewController.m */,
+				F8AC62E619DCBF8A00BF750B /* ConfigViewController.h */,
+				F8AC62E719DCBF8A00BF750B /* ConfigViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F8AC62F319DCBFE800BF750B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62F019DCBFDB00BF750B /* Converter.h */,
+				F8AC62F119DCBFDB00BF750B /* Converter.m */,
+				F8AC62ED19DCBFCB00BF750B /* Person.h */,
+				F8AC62EE19DCBFCB00BF750B /* Person.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F8AC62F519DCC19700BF750B /* Protocolo */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC62F419DCC18300BF750B /* ConfigViewControllerDelegate.h */,
+			);
+			name = Protocolo;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8AC62BC19DCBCA100BF750B /* Convertidor Dolares */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AC62E019DCBCA100BF750B /* Build configuration list for PBXNativeTarget "Convertidor Dolares" */;
+			buildPhases = (
+				F8AC62B919DCBCA100BF750B /* Sources */,
+				F8AC62BA19DCBCA100BF750B /* Frameworks */,
+				F8AC62BB19DCBCA100BF750B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Convertidor Dolares";
+			productName = "Convertidor Dolares";
+			productReference = F8AC62BD19DCBCA100BF750B /* Convertidor Dolares.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8AC62D519DCBCA100BF750B /* Convertidor DolaresTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AC62E319DCBCA100BF750B /* Build configuration list for PBXNativeTarget "Convertidor DolaresTests" */;
+			buildPhases = (
+				F8AC62D219DCBCA100BF750B /* Sources */,
+				F8AC62D319DCBCA100BF750B /* Frameworks */,
+				F8AC62D419DCBCA100BF750B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8AC62D819DCBCA100BF750B /* PBXTargetDependency */,
+			);
+			name = "Convertidor DolaresTests";
+			productName = "Convertidor DolaresTests";
+			productReference = F8AC62D619DCBCA100BF750B /* Convertidor DolaresTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8AC62B519DCBCA100BF750B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Profesor;
+				TargetAttributes = {
+					F8AC62BC19DCBCA100BF750B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F8AC62D519DCBCA100BF750B = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = F8AC62BC19DCBCA100BF750B;
+					};
+				};
+			};
+			buildConfigurationList = F8AC62B819DCBCA100BF750B /* Build configuration list for PBXProject "Convertidor Dolares" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8AC62B419DCBCA100BF750B;
+			productRefGroup = F8AC62BE19DCBCA100BF750B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8AC62BC19DCBCA100BF750B /* Convertidor Dolares */,
+				F8AC62D519DCBCA100BF750B /* Convertidor DolaresTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8AC62BB19DCBCA100BF750B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC62CC19DCBCA100BF750B /* Main.storyboard in Resources */,
+				F8AC62D119DCBCA100BF750B /* LaunchScreen.xib in Resources */,
+				F8AC62CE19DCBCA100BF750B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC62D419DCBCA100BF750B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8AC62B919DCBCA100BF750B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC62EF19DCBFCB00BF750B /* Person.m in Sources */,
+				F8AC62C919DCBCA100BF750B /* ViewController.m in Sources */,
+				F8AC62C619DCBCA100BF750B /* AppDelegate.m in Sources */,
+				F8AC62F219DCBFDB00BF750B /* Converter.m in Sources */,
+				F8AC62EB19DCBFA100BF750B /* ConvertidorViewController.m in Sources */,
+				F8AC62E819DCBF8A00BF750B /* ConfigViewController.m in Sources */,
+				F8AC62C319DCBCA100BF750B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC62D219DCBCA100BF750B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC62DD19DCBCA100BF750B /* Convertidor_DolaresTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8AC62D819DCBCA100BF750B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8AC62BC19DCBCA100BF750B /* Convertidor Dolares */;
+			targetProxy = F8AC62D719DCBCA100BF750B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8AC62CA19DCBCA100BF750B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8AC62CB19DCBCA100BF750B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8AC62CF19DCBCA100BF750B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8AC62D019DCBCA100BF750B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8AC62DE19DCBCA100BF750B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8AC62DF19DCBCA100BF750B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8AC62E119DCBCA100BF750B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Convertidor Dolares/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8AC62E219DCBCA100BF750B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Convertidor Dolares/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F8AC62E419DCBCA100BF750B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Convertidor DolaresTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Convertidor Dolares.app/Convertidor Dolares";
+			};
+			name = Debug;
+		};
+		F8AC62E519DCBCA100BF750B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Convertidor DolaresTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Convertidor Dolares.app/Convertidor Dolares";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8AC62B819DCBCA100BF750B /* Build configuration list for PBXProject "Convertidor Dolares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC62DE19DCBCA100BF750B /* Debug */,
+				F8AC62DF19DCBCA100BF750B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AC62E019DCBCA100BF750B /* Build configuration list for PBXNativeTarget "Convertidor Dolares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC62E119DCBCA100BF750B /* Debug */,
+				F8AC62E219DCBCA100BF750B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8AC62E319DCBCA100BF750B /* Build configuration list for PBXNativeTarget "Convertidor DolaresTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC62E419DCBCA100BF750B /* Debug */,
+				F8AC62E519DCBCA100BF750B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8AC62B519DCBCA100BF750B /* Project object */;
+}
