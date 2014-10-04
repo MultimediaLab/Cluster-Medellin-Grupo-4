@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81B006819DF57EF00F65CF5 /* Paises.plist in Resources */ = {isa = PBXBuildFile; fileRef = F81B006719DF57EF00F65CF5 /* Paises.plist */; };
 		F8D7657319DCDEFD005A54E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D7657219DCDEFD005A54E8 /* main.m */; };
 		F8D7657619DCDEFD005A54E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D7657519DCDEFD005A54E8 /* AppDelegate.m */; };
 		F8D7657919DCDEFD005A54E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D7657819DCDEFD005A54E8 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F81B006719DF57EF00F65CF5 /* Paises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Paises.plist; sourceTree = "<group>"; };
 		F8D7656D19DCDEFD005A54E8 /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D7657119DCDEFD005A54E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D7657219DCDEFD005A54E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		F8D7656419DCDEFC005A54E8 = {
 			isa = PBXGroup;
 			children = (
+				F81B006719DF57EF00F65CF5 /* Paises.plist */,
 				F8D7656F19DCDEFD005A54E8 /* Picker */,
 				F8D7658919DCDEFD005A54E8 /* PickerTests */,
 				F8D7656E19DCDEFD005A54E8 /* Products */,
@@ -202,6 +205,7 @@
 				F8D7657C19DCDEFD005A54E8 /* Main.storyboard in Resources */,
 				F8D7658119DCDEFD005A54E8 /* LaunchScreen.xib in Resources */,
 				F8D7657E19DCDEFD005A54E8 /* Images.xcassets in Resources */,
+				F81B006819DF57EF00F65CF5 /* Paises.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +418,7 @@
 				F8D7659219DCDEFD005A54E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8D7659319DCDEFD005A54E8 /* Build configuration list for PBXNativeTarget "PickerTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				F8D7659519DCDEFD005A54E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
