@@ -7,6 +7,7 @@
 //
 
 #import "PintorView.h"
+#import "UIColor+Random.h"
 
 @implementation PintorView
 
@@ -17,8 +18,30 @@
     CGContextRef contexto = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(contexto, 1.0f);
     
-    CGContextSetFillColorWithColor(contexto, [UIColor redColor].CGColor);
-    CGContextSetStrokeColorWithColor(contexto, [UIColor blueColor].CGColor);
+    switch (_colorType) {
+        case kRedType:
+            _currentColor = [UIColor redColor];
+            _useRandom = NO;
+            break;
+        case kGreenType:
+            _currentColor = [UIColor greenColor];
+            _useRandom = NO;
+            break;
+        case kBlueType:
+            _currentColor = [UIColor blueColor];
+            _useRandom = NO;
+            break;
+        case kYellowType:
+            _currentColor = [UIColor yellowColor];
+            _useRandom = NO;
+            break;
+        case kRandomType:
+            _useRandom = YES;
+            break;
+    }
+    
+    CGContextSetFillColorWithColor(contexto, _currentColor.CGColor);
+    CGContextSetStrokeColorWithColor(contexto, _currentColor.CGColor);
     
     switch (_shapeType) {
         case kLineShape:
@@ -62,6 +85,11 @@
     return CGRectMake(_firstTouch.x, _firstTouch.y, _lastTouch.x-_firstTouch.x, _lastTouch.y-_firstTouch.y);
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    if (_useRandom) {
+        _currentColor = [UIColor randomColor];
+    }
+    
     UITouch * touch = [touches anyObject];
     _firstTouch = [touch locationInView:self];
     

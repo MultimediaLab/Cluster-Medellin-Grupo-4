@@ -13,6 +13,7 @@
 @interface ViewController : UIViewController
 
 - (IBAction)changeShapeType:(id)sender;
+- (IBAction)changeColorType:(id)sender;
 
 @end
 

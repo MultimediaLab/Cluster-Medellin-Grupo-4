@@ -21,6 +21,7 @@
 @property BOOL useRandom;
 
 @property ShapeType shapeType;
+@property ColorType colorType;
 
 @property UIImage * image;
 
