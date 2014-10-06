@@ -16,6 +16,7 @@
 		F80C3DD219DF7B0D00C160B5 /* iPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C3DD119DF7B0D00C160B5 /* iPaintTests.m */; };
 		F80C3DDE19DF7E9700C160B5 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C3DDD19DF7E9700C160B5 /* UIColor+Random.m */; };
 		F80C3DE119DF82C300C160B5 /* PintorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80C3DE019DF82C300C160B5 /* PintorView.m */; };
+		F8ACCEF819E3548F00CBD4F2 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = F8ACCEF719E3548F00CBD4F2 /* apple.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F80C3DDD19DF7E9700C160B5 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
 		F80C3DDF19DF82C300C160B5 /* PintorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PintorView.h; sourceTree = "<group>"; };
 		F80C3DE019DF82C300C160B5 /* PintorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PintorView.m; sourceTree = "<group>"; };
+		F8ACCEF719E3548F00CBD4F2 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		F80C3DA919DF7B0D00C160B5 = {
 			isa = PBXGroup;
 			children = (
+				F8ACCEF719E3548F00CBD4F2 /* apple.png */,
 				F80C3DDC19DF7E9700C160B5 /* UIColor+Random.h */,
 				F80C3DDF19DF82C300C160B5 /* PintorView.h */,
 				F80C3DE019DF82C300C160B5 /* PintorView.m */,
@@ -213,6 +216,7 @@
 			files = (
 				F80C3DC119DF7B0D00C160B5 /* Main.storyboard in Resources */,
 				F80C3DC619DF7B0D00C160B5 /* LaunchScreen.xib in Resources */,
+				F8ACCEF819E3548F00CBD4F2 /* apple.png in Resources */,
 				F80C3DC319DF7B0D00C160B5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +432,7 @@
 				F80C3DD719DF7B0D00C160B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F80C3DD819DF7B0D00C160B5 /* Build configuration list for PBXNativeTarget "iPaintTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +441,7 @@
 				F80C3DDA19DF7B0D00C160B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

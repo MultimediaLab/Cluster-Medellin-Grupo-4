@@ -10,13 +10,53 @@
 
 @implementation PintorView
 
-/*
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
+    CGContextRef contexto = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(contexto, 1.0f);
+    
+    CGContextSetFillColorWithColor(contexto, [UIColor redColor].CGColor);
+    CGContextSetStrokeColorWithColor(contexto, [UIColor blueColor].CGColor);
+    
+    switch (_shapeType) {
+        case kLineShape:
+            CGContextMoveToPoint(contexto, _firstTouch.x, _firstTouch.y);
+            CGContextAddLineToPoint(contexto, _lastTouch.x, _lastTouch.y);
+            CGContextStrokePath(contexto);
+            break;
+            
+        case kEllipseShape:
+            CGContextAddEllipseInRect(contexto, self.currentRect);
+            //CGContextStrokePath(contexto);
+            CGContextDrawPath(contexto, kCGPathFillStroke);
+            break;
+            
+        case kRectShape:
+            CGContextAddRect(contexto, self.currentRect);
+            CGContextDrawPath(contexto, kCGPathFillStroke);
+            break;
+            
+        case kImageShape:
+        {
+            CGFloat horizontal = _image.size.width/2;
+            CGFloat vertical = _image.size.height/2;
+            CGPoint puntoDibujo = CGPointMake(_lastTouch.x-horizontal, _lastTouch.y-vertical);
+            
+            [_image drawAtPoint:puntoDibujo];
+        }
+            break;
+    }
 }
-*/
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _image = [UIImage imageNamed:@"apple.png"];
+    }
+    return self;
+}
+
 
 -(CGRect)currentRect{
     return CGRectMake(_firstTouch.x, _firstTouch.y, _lastTouch.x-_firstTouch.x, _lastTouch.y-_firstTouch.y);
