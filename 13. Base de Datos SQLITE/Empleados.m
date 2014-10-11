@@ -76,4 +76,39 @@ const char * dbpath;
         sqlite3_close(empleadosdb);
     }
 }
+-(void)updateEmployedInDatabase{
+    [self searchPathOfDatabase];
+    sqlite3_stmt * statement;
+    if (sqlite3_open(dbpath,&empleadosdb)==SQLITE_OK){
+        NSString * update = [[NSString alloc] initWithFormat:@"UPDATE Empleados SET EMP_NAME = \"%@\", EMP_CEDULA = \"%@\", EMP_CARGO = \"%@\", EMP_PHONE = \"%@\", EMP_ADRESS = \"%@\" WHERE ID = %@ ", _empName, _empCedula, _empJob, _empPhone, _empAdress, _empId];
+        
+        const char * update_sql = [update UTF8String];
+        
+        sqlite3_prepare_v2(empleadosdb,update_sql,-1,&statement,NULL);
+        if (sqlite3_step(statement)==SQLITE_DONE) {
+            _status = @"Registro Actualizado con Exito!!";
+        } else {
+            _status = @"Error al actualizar registro";
+        }
+        sqlite3_finalize(statement);
+        sqlite3_close(empleadosdb);
+    }
+}
+-(void)deleteEmployedInDatabase{
+    [self searchPathOfDatabase];
+    sqlite3_stmt * statement;
+    if (sqlite3_open(dbpath,&empleadosdb)==SQLITE_OK){
+        NSString * delete = [[NSString alloc] initWithFormat:@"DELETE FROM Empleados WHERE EMP_CEDULA = \"%@\"",_empCedula];
+        
+        const char * delete_sql = [delete UTF8String];
+        sqlite3_prepare_v2(empleadosdb,delete_sql,-1,&statement,NULL);
+        if (sqlite3_step(statement)==SQLITE_DONE) {
+            _status = @"Registro Eliminado con Exito!!";
+        } else {
+            _status = @"Error al eliminar registro";
+        }
+        sqlite3_finalize(statement);
+        sqlite3_close(empleadosdb);
+    }
+}
 @end

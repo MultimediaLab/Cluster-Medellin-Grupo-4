@@ -24,4 +24,10 @@
 //Buscar
 -(void)searchEmployedInDatabase;
 
+//Actualizar
+-(void)updateEmployedInDatabase;
+
+//Borrar
+-(void)deleteEmployedInDatabase;
+
 @end
