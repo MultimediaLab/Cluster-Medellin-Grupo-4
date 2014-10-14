@@ -16,7 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _mapView.delegate = self;
+    medellin = [[MiPunto alloc] init];
+    [_mapView addAnnotation:medellin];
+    
+    MKCoordinateRegion region;
+    region.center.latitude = medellin.coordinate.latitude;
+    
+    
+    region.center.longitude = medellin.coordinate.longitude;
+    region.span.latitudeDelta = 0.5;
+    region.span.longitudeDelta = 0.5;
+    
+    [_mapView setRegion:region animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)changeMap:(id)sender {
+}
 @end

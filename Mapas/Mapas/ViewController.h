@@ -1,15 +1,17 @@
-//
-//  ViewController.h
-//  Mapas
-//
-//  Created by Profesor on 10/10/14.
-//  Copyright (c) 2014 Profesor. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import "MiPunto.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+{
+    
+    MiPunto * medellin;
 
+}
+
+- (IBAction)changeMap:(id)sender;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
