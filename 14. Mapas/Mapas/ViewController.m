@@ -39,5 +39,17 @@
 }
 
 - (IBAction)changeMap:(id)sender {
+    int index = (int)[sender selectedSegmentIndex];
+    switch (index) {
+        case 0:
+            [_mapView setMapType:MKMapTypeStandard];
+            break;
+        case 1:
+            [_mapView setMapType:MKMapTypeSatellite];
+            break;
+        case 2:
+            [_mapView setMapType:MKMapTypeHybrid];
+            break;
+    }
 }
 @end
